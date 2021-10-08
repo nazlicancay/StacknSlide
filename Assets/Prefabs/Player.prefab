@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8223793397472674291}
   - component: {fileID: 8223793397472674284}
   - component: {fileID: 8223793397472674290}
+  - component: {fileID: 7568094456063788574}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -30,8 +31,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8223793397472674282}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.03688425, y: -0.12997685, z: -0.16789529, w: 0.97650236}
+  m_LocalPosition: {x: 11.518031, y: 134.97311, z: -159.35713}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -794,5 +795,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc56cdf7ae1d7674f87be2a665b09431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalController: {fileID: 8223793397472674291}
-  splineFollower: {fileID: 8223793397472674285}
+  onCollison: 0
+  obstaclecollision: 0
+  slidingHumanControl: {fileID: 0}
+  obstacle: {fileID: 0}
+  createChild: 0
+  once: 0
+  childCount: 0
+  placeHolder: {fileID: 0}
+  destroychild: 0
+  childSpheres: []
+--- !u!114 &7568094456063788574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8223793397472674282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c325a93e2dab2a438945485d28c15f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveMultiplier: 0

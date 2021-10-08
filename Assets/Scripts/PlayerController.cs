@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 {
     public bool onCollison;
     public bool obstaclecollision =false;
-    public SlidingHumanControl slidingHumanControl;
+    public Human slidingHumanControl;
     public GameObject obstacle;
     public bool createChild;
     public bool once = false;

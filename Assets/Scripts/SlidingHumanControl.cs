@@ -44,16 +44,18 @@ public class SlidingHumanControl : MonoBehaviour
 
 
     }
+    
+    
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("obstacle"))
+      /*  if (other.gameObject.CompareTag("obstacle"))
         {
             hitObstacle = true;
             Destroy(other.gameObject);
             Debug.Log("hitting an onstacle");
 
-        }
+        }*/
 
         if (other.gameObject.CompareTag("Player"))
         {

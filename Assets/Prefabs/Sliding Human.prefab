@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6164280912834816523}
   - component: {fileID: 6164280912834816520}
   - component: {fileID: 6164280912834816535}
-  - component: {fileID: 6164280912834816530}
+  - component: {fileID: 1281695383008336491}
   m_Layer: 0
   m_Name: Sliding Human
   m_TagString: SlidingHuman
@@ -30,13 +30,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6164280912834816529}
-  m_LocalRotation: {x: 0.16797732, y: 0.968949, z: -0.03847774, w: 0.17731602}
+  m_LocalRotation: {x: 0.16797769, y: 0.96894884, z: -0.038480684, w: 0.17731597}
   m_LocalPosition: {x: -0.2606911, y: -7.719517, z: -25.044266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 7.709, y: 160.506, z: 18.344}
 --- !u!33 &6164280912834816533
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20260,26 +20260,26 @@ MonoBehaviour:
   targetRigidbody2D: {fileID: 0}
   targetTransform: {fileID: 6164280912834816522}
   _result:
-    position: {x: -0.26728383, y: -8.307273, z: -24.965042}
-    up: {x: 0.28416547, y: 0.9582411, z: -0.03199897}
-    forward: {x: 0.33069292, y: -0.13413581, z: -0.9341552}
+    position: {x: 2.9672475, y: -9.458915, z: -32.388767}
+    up: {x: 0.3705364, y: 0.9284164, z: 0.027306233}
+    forward: {x: 0.49481627, y: -0.16744436, z: -0.8527129}
     color: {r: 1, g: 1, b: 1, a: 1}
     size: 1
-    percent: 0.01600000075995922
+    percent: 0.019999999552965164
   _finalResult:
-    position: {x: -0.26728383, y: -8.307273, z: -24.965042}
-    up: {x: 0.28416547, y: 0.9582411, z: -0.03199897}
-    forward: {x: 0.33069292, y: -0.13413581, z: -0.9341552}
+    position: {x: 2.9672475, y: -9.458915, z: -32.388767}
+    up: {x: 0.3705364, y: 0.9284164, z: 0.027306233}
+    forward: {x: 0.49481627, y: -0.16744436, z: -0.8527129}
     color: {r: 1, g: 1, b: 1, a: 1}
     size: 1
-    percent: 0.01600000075995922
+    percent: 0.019999999552965164
   wrapMode: 0
   followMode: 0
   autoStartPosition: 0
   follow: 1
   _followSpeed: 1
   _followDuration: 1
-  _startPosition: 0.01600000075995922
+  _startPosition: 0.019999999552965164
   editorSetPosition: 1
 --- !u!54 &6164280912834816523
 Rigidbody:
@@ -20328,9 +20328,9 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0.0000076293945, y: -0.000015258789, z: 0}
---- !u!114 &6164280912834816530
+  m_Radius: 0.52058107
+  m_Center: {x: 0.020440817, y: -0.000015258541, z: 2.7003616e-10}
+--- !u!114 &1281695383008336491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20339,10 +20339,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 6164280912834816529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc8fd4708abbd814fa93921e5f2912e0, type: 3}
+  m_Script: {fileID: 11500000, guid: aa214cdf62774cc4e84c4e2421f1f7e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 5
+  minSpeed: 1
+  _horizontalMovementController: {fileID: 6164280912834816520}
+  splineFollower: {fileID: 6164280912834816534}
   horizontalController: {fileID: 6164280912834816520}
   playerController: {fileID: 0}
-  splineFollower: {fileID: 6164280912834816534}
   hitObstacle: 0
+  humanAlive: 1
+  changeBehaviourInSeconds: 2
+  horizontalLerpTime: 1
+  startPos: 0
